@@ -47,10 +47,10 @@ def enterOrder():
        
        if order.lower() in list:
         
-        value =cnt_list[list.index(order)]
+        value =cnt_list[list.index(order.lower())]
         
         value+= 1
-        cnt_list[list.index(order)]=value
+        cnt_list[list.index(order.lower())]=value
 
         print(f'** {value} order of {order} have been added to your meal **')
         
